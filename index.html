@@ -6,76 +6,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Fascinate|Modak" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <h1>JAVA BLUES BAND</h1>
-    <p>
-      Siente el sonido cercano
-    </p>
-    <img src="imagenes/pentagrama.jpg">
+  <header class="cabecera">
+    <div class="div-pent">
+      <img class="pentagrama" src="imagenes/pentagrama.jpg" alt="Pentagrama con notas">
+    </div>
+    <div class="todo">
+      <h1 class="empresa">JAVA BLUES BAND</h1>
+      <div class="titulo">
+        <p>
+          Siente el sonido cercano
+        </p>
+      </div>
+    </div>
   </header>
+
   <section class="container">
 
 
       <ul class="columna">
 
-        <li><img src="imagenes/bateria.jpg">
-          <h1>Bateria</h1>
-          <h2>Precio: 500€</h2>
+        <li id="0" class="abrir-emergente"><img src="imagenes/bateria.jpg">
+          <h3>Bateria</h3>
+          <h3>Precio: 500€</h3>
         </li>
-        <li><img src="imagenes/piano-cola.jpg">
-          <h1>Piano de cola</h1>
-          <h2>Precio: 2000€</h2>
+        <li id="2"class="abrir-emergente"><img src="imagenes/piano-vertical.png">
+          <h3>Piano vertical</h3>
+          <h3>Precio: 1000€</h3>
         </li>
-        <li><img src="imagenes/piano-vertical.png">
-          <h1>Piano vertical</h1>
-          <h2>Precio: 500€</h2>
+        <li id="4" class="abrir-emergente"><img src="imagenes/bongos.png">
+          <h3>Bongos</h3>
+          <h3>Precio: 200€</h3>
         </li>
-        <li><img src="imagenes/bongos.png">
-          <h1>Bongos</h1>
-          <h2>Precio: 500€</h2>
+        <li id="6" class="abrir-emergente"><img src="imagenes/armonica.jpg">
+          <h3>Armónica</h3>
+          <h3>Precio: 100€</h3>
         </li>
       </ul>
 
 
         <ul class="columna">
-        <li><img src="imagenes/saxofon.jpg">
-          <h1>Saxofón</h1>
-          <h2>Precio: 500€</h2>
+        <li id="1" class="abrir-emergente"><img src="imagenes/saxofon.jpg">
+          <h3>Saxofón</h3>
+          <h3>Precio: 600€</h3>
         </li>
-        <li><img src="imagenes/violin.jpg">
-          <h1>Violín</h1>
-          <h2>Precio: 500€</h2>
+        <li id="3" class="abrir-emergente"><img src="imagenes/piano-cola.jpg">
+          <h3>Piano de cola</h3>
+          <h3>Precio: 2000€</h3>
         </li>
-        <li><img src="imagenes/trompeta.jpg">
-          <h1>Trompeta</h1>
-          <h2>Precio: 500€</h2>
+        <li id="5"class="abrir-emergente"><img src="imagenes/violin.jpg">
+          <h3>Violín</h3>
+          <h3>Precio: 800€</h3>
+        </li>
+        <li id="7" class="abrir-emergente"><img src="imagenes/trompeta.jpg">
+          <h3>Trompeta</h3>
+          <h3>Precio: 400€</h3>
         </li>
         </ul>
 
 
 
   </section>
-  <div class="emergente">
+  <div class="emergente cerrar">
     <h1>
       COMPRE SU PRODUCTO
 
-        <img class="boton-cerrar" src="imagenes/close.png"/>
+        <button class="boton-cerrar"><img src="imagenes/close.png"/></button>
 
     </h1>
        <img class="imagen-descripcion" src="imagenes/pentagrama.jpg">
-       <img class="imagen-descripcion" src="imagenes/violin.jpg">
-       <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+       <img class="imagen-descripcion img-instrument" src="imagenes/bateria.jpg">
+       <h3 id="text-descript">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
        </h3>
-       <h1 class:"precio"> PRECIO: 500 Euros </h1>
-       <h1 class="boton-compra"> COMPRAR AHORA </h1>
+       <h3 class="precio"> PRECIO: <span id="precio-euros"></span> € </h3>
+       <button  class="boton-compra"><h3> COMPRAR AHORA </h3></button>
+       <p class="parrafo-descuento">
+         Comprelo con un 20% de descuento por:
+         <span class="precioRebajado"></span> €
+       </p>
+       <p class="cuentaAtras"></p>
+       <p class="aviso"></p>;
 
   </div>
   <footer>
     <h3>© Java Blues band</h3>
   </footer>
+  <script src="js/musica.js">
+  </script>
 </body>
 </html>
